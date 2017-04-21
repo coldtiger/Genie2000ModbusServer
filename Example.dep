@@ -1,0 +1,280 @@
+# Microsoft Developer Studio Generated Dependency File, included by Example.mak
+
+.\AboutDlg.cpp : \
+	".\AboutDlg.h"\
+	".\analyze.tlb"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\Example.rc : \
+	".\res\Example.ico"\
+	".\res\Example.rc2"\
+	
+
+.\MAINDlg.cpp : \
+	".\AboutDlg.h"\
+	".\adjustcontrol.h"\
+	".\AdjustDlg.h"\
+	".\analysiseditor.h"\
+	".\analyze.tlb"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\MAINDlg.h"\
+	".\mvc.h"\
+	".\Preference.h"\
+	".\reportviewer.h"\
+	".\SeqAnalyzer.h"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	"j:\canberra\genie\include\vc98\basetsd.h"\
+	
+
+.\WinGAA.cpp : \
+	".\adjustcontrol.h"\
+	".\AdjustDlg.h"\
+	".\analysiseditor.h"\
+	".\analyze.tlb"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\MAINDlg.h"\
+	".\mvc.h"\
+	".\Preference.h"\
+	".\reportviewer.h"\
+	".\SeqAnalyzer.h"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\FileFunctions.cpp : \
+	".\adjustcontrol.h"\
+	".\AdjustDlg.h"\
+	".\analysiseditor.h"\
+	".\analyze.tlb"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\MAINDlg.h"\
+	".\mvc.h"\
+	".\Preference.h"\
+	".\reportviewer.h"\
+	".\SeqAnalyzer.h"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\FileMenu.cpp : \
+	".\adjustcontrol.h"\
+	".\AdjustDlg.h"\
+	".\analysiseditor.h"\
+	".\analyze.tlb"\
+	".\camdialog.tlb"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\MAINDlg.h"\
+	".\mvc.h"\
+	".\Preference.h"\
+	".\reportviewer.h"\
+	".\SeqAnalyzer.h"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\AcqSetupDlg.cpp : \
+	".\AcqSetupDlg.h"\
+	".\analyze.tlb"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\AdjustDlg.cpp : \
+	".\adjustcontrol.h"\
+	".\AdjustDlg.h"\
+	".\analyze.tlb"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\MCAMenu.cpp : \
+	".\AcqSetupDlg.h"\
+	".\adjustcontrol.h"\
+	".\AdjustDlg.h"\
+	".\analysiseditor.h"\
+	".\analyze.tlb"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\MAINDlg.h"\
+	".\mvc.h"\
+	".\Preference.h"\
+	".\reportviewer.h"\
+	".\SeqAnalyzer.h"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\DisplayFunctions.cpp : \
+	".\adjustcontrol.h"\
+	".\AdjustDlg.h"\
+	".\analysiseditor.h"\
+	".\analyze.tlb"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\MAINDlg.h"\
+	".\mvc.h"\
+	".\Preference.h"\
+	".\reportviewer.h"\
+	".\SeqAnalyzer.h"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\DisplayMenu.cpp : \
+	".\adjustcontrol.h"\
+	".\AdjustDlg.h"\
+	".\analysiseditor.h"\
+	".\analyze.tlb"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\MAINDlg.h"\
+	".\mvc.h"\
+	".\Preference.h"\
+	".\reportviewer.h"\
+	".\SeqAnalyzer.h"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\Preference.cpp : \
+	".\analyze.tlb"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\Preference.h"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\PrefFunctions.cpp : \
+	".\adjustcontrol.h"\
+	".\AdjustDlg.h"\
+	".\analysiseditor.h"\
+	".\analyze.tlb"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\MAINDlg.h"\
+	".\mvc.h"\
+	".\Preference.h"\
+	".\reportviewer.h"\
+	".\SeqAnalyzer.h"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\AnalzerMenu.cpp : \
+	".\adjustcontrol.h"\
+	".\AdjustDlg.h"\
+	".\analysiseditor.h"\
+	".\analyze.tlb"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\MAINDlg.h"\
+	".\mvc.h"\
+	".\Preference.h"\
+	".\reportviewer.h"\
+	".\SeqAnalyzer.h"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	"j:\canberra\libs\reportview.tlb"\
+	
+
+.\SeqAnalyzer.cpp : \
+	".\analysiseditor.h"\
+	".\analyze.tlb"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\SeqAnalyzer.h"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\DatasourceMenu.cpp : \
+	".\adjustcontrol.h"\
+	".\AdjustDlg.h"\
+	".\analysiseditor.h"\
+	".\analyze.tlb"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\MAINDlg.h"\
+	".\mvc.h"\
+	".\Preference.h"\
+	".\reportviewer.h"\
+	".\SeqAnalyzer.h"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\Calibration.cpp : \
+	".\analyze.tlb"\
+	".\Calibration.h"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\EditMenu.cpp : \
+	".\adjustcontrol.h"\
+	".\AdjustDlg.h"\
+	".\analysiseditor.h"\
+	".\analyze.tlb"\
+	".\Calibration.h"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\MAINDlg.h"\
+	".\mvc.h"\
+	".\Preference.h"\
+	".\reportviewer.h"\
+	".\SampleInfo.h"\
+	".\SeqAnalyzer.h"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\SampleInfo.cpp : \
+	".\analyze.tlb"\
+	".\devaccess.tlb"\
+	".\displayer.tlb"\
+	".\mvc.h"\
+	".\SampleInfo.h"\
+	".\WinGAA.h"\
+	"j:\canberra\libs\dataaccess.tlb"\
+	
+
+.\adjustcontrol.cpp : \
+	".\adjustcontrol.h"\
+	
+
+.\analysiseditor.cpp : \
+	".\analysiseditor.h"\
+	
+
+.\font.cpp : \
+	".\font.h"\
+	
+
+.\mvc.cpp : \
+	".\mvc.h"\
+	
+
+.\reportviewer.cpp : \
+	".\font.h"\
+	".\reportviewer.h"\
+	

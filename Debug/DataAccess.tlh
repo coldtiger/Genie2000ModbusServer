@@ -1,0 +1,825 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (2d2dbe02).
+//
+// d:\gssoftware\genie2000\debug\DataAccess.tlh
+//
+// C++ source equivalent of Win32 type library DataAccess.tlb
+// compiler-generated file created 03/24/17 at 15:14:34 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("6783c7c1-f1a0-11d1-9d1f-aa0004004105"))
+/* dual interface */ IMatrixCorrection;
+struct __declspec(uuid("87d9ae61-f168-11d1-9d1f-aa0004004105"))
+/* dual interface */ IEnergy;
+struct __declspec(uuid("87d9ae62-f168-11d1-9d1f-aa0004004105"))
+/* dual interface */ IFwhm;
+struct __declspec(uuid("87d9ae63-f168-11d1-9d1f-aa0004004105"))
+/* dual interface */ ILowTail;
+struct __declspec(uuid("87d9ae66-f168-11d1-9d1f-aa0004004105"))
+/* dual interface */ IReals;
+struct __declspec(uuid("87d9ae65-f168-11d1-9d1f-aa0004004105"))
+/* dual interface */ IDoubles;
+struct __declspec(uuid("87d9ae64-f168-11d1-9d1f-aa0004004105"))
+/* dual interface */ ITotals;
+struct __declspec(uuid("87d9ae67-f168-11d1-9d1f-aa0004004105"))
+/* dual interface */ IPower;
+struct __declspec(uuid("87d9ae68-f168-11d1-9d1f-aa0004004105"))
+/* dual interface */ IRational;
+struct __declspec(uuid("87d9ae69-f168-11d1-9d1f-aa0004004105"))
+/* dual interface */ IExponential;
+struct __declspec(uuid("87d9ae6a-f168-11d1-9d1f-aa0004004105"))
+/* dual interface */ IPolynomial;
+struct __declspec(uuid("53885ca3-ef50-11d1-9d1c-aa0004004105"))
+/* dual interface */ IAddASource;
+struct __declspec(uuid("b3682f71-f0e5-11d1-9d1e-aa0004004105"))
+/* dual interface */ IMultCorrected;
+struct __declspec(uuid("53885ca1-ef50-11d1-9d1c-aa0004004105"))
+/* dual interface */ INonMCReals;
+struct __declspec(uuid("3fda5261-fec6-11d1-9d29-aa0004004105"))
+/* dual interface */ INonMult;
+struct __declspec(uuid("53885ca2-ef50-11d1-9d1c-aa0004004105"))
+/* dual interface */ IMass;
+struct __declspec(uuid("19faf50d-ce0f-11d1-9cfa-aa0004004105"))
+/* dual interface */ IEfficiency;
+struct __declspec(uuid("ebaaf761-f965-11d1-b348-aa0004004504"))
+/* dual interface */ ITransmission;
+struct __declspec(uuid("cd3d7251-fc70-11d1-b350-aa0004004504"))
+/* dual interface */ IDifferentialPeak;
+struct __declspec(uuid("70262240-ce0e-11d1-9cfa-aa0004004105"))
+/* dual interface */ ICalibration;
+struct __declspec(uuid("ed8dc431-0f4a-11d2-b366-aa0004004504"))
+/* dual interface */ IPeakArea;
+struct __declspec(uuid("bd0847a0-0d00-11d2-b365-aa0004004504"))
+/* dual interface */ IPeaks;
+struct __declspec(uuid("5531fc7d-c3df-11d1-9cf4-aa0004004105"))
+/* dual interface */ IDataAccess;
+struct /* coclass */ DataAccess;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IMatrixCorrection, __uuidof(IMatrixCorrection));
+_COM_SMARTPTR_TYPEDEF(IEnergy, __uuidof(IEnergy));
+_COM_SMARTPTR_TYPEDEF(IFwhm, __uuidof(IFwhm));
+_COM_SMARTPTR_TYPEDEF(ILowTail, __uuidof(ILowTail));
+_COM_SMARTPTR_TYPEDEF(IReals, __uuidof(IReals));
+_COM_SMARTPTR_TYPEDEF(IDoubles, __uuidof(IDoubles));
+_COM_SMARTPTR_TYPEDEF(ITotals, __uuidof(ITotals));
+_COM_SMARTPTR_TYPEDEF(IPower, __uuidof(IPower));
+_COM_SMARTPTR_TYPEDEF(IRational, __uuidof(IRational));
+_COM_SMARTPTR_TYPEDEF(IExponential, __uuidof(IExponential));
+_COM_SMARTPTR_TYPEDEF(IPolynomial, __uuidof(IPolynomial));
+_COM_SMARTPTR_TYPEDEF(IAddASource, __uuidof(IAddASource));
+_COM_SMARTPTR_TYPEDEF(IMultCorrected, __uuidof(IMultCorrected));
+_COM_SMARTPTR_TYPEDEF(INonMCReals, __uuidof(INonMCReals));
+_COM_SMARTPTR_TYPEDEF(INonMult, __uuidof(INonMult));
+_COM_SMARTPTR_TYPEDEF(IMass, __uuidof(IMass));
+_COM_SMARTPTR_TYPEDEF(IEfficiency, __uuidof(IEfficiency));
+_COM_SMARTPTR_TYPEDEF(ITransmission, __uuidof(ITransmission));
+_COM_SMARTPTR_TYPEDEF(IDifferentialPeak, __uuidof(IDifferentialPeak));
+_COM_SMARTPTR_TYPEDEF(ICalibration, __uuidof(ICalibration));
+_COM_SMARTPTR_TYPEDEF(IPeakArea, __uuidof(IPeakArea));
+_COM_SMARTPTR_TYPEDEF(IPeaks, __uuidof(IPeaks));
+_COM_SMARTPTR_TYPEDEF(IDataAccess, __uuidof(IDataAccess));
+
+//
+// Type library items
+//
+
+enum FindMode
+{
+    dByNuclideLine = 4,
+    dByPeak = 1,
+    dByHistory = 3,
+    dByNuclideName = 2
+};
+
+struct __declspec(uuid("6783c7c1-f1a0-11d1-9d1f-aa0004004105"))
+IMatrixCorrection : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Points (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Points (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_Curve (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("87d9ae61-f168-11d1-9d1f-aa0004004105"))
+IEnergy : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Points (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Points (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_Curve (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("87d9ae62-f168-11d1-9d1f-aa0004004105"))
+IFwhm : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Points (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Points (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_Curve (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("87d9ae63-f168-11d1-9d1f-aa0004004105"))
+ILowTail : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Points (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Points (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_Curve (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("87d9ae66-f168-11d1-9d1f-aa0004004105"))
+IReals : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Points (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Points (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_Curve (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Curve (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_Covariance (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Covariance (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall get_Limits (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Limits (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("87d9ae65-f168-11d1-9d1f-aa0004004105"))
+IDoubles : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Points (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Points (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_Curve (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Curve (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_Covariance (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Covariance (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall get_Limits (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Limits (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("87d9ae64-f168-11d1-9d1f-aa0004004105"))
+ITotals : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Points (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Points (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_Curve (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Curve (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_Covariance (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Covariance (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall get_Limits (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Limits (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("87d9ae67-f168-11d1-9d1f-aa0004004105"))
+IPower : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Curve (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Curve (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_Covariance (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Covariance (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+    virtual HRESULT __stdcall get_Limits (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Limits (
+        VARIANT pVal ) = 0;
+};
+
+struct __declspec(uuid("87d9ae68-f168-11d1-9d1f-aa0004004105"))
+IRational : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Curve (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Curve (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_Covariance (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Covariance (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+    virtual HRESULT __stdcall get_Limits (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Limits (
+        VARIANT pVal ) = 0;
+};
+
+struct __declspec(uuid("87d9ae69-f168-11d1-9d1f-aa0004004105"))
+IExponential : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Curve (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Curve (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_Covariance (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Covariance (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+    virtual HRESULT __stdcall get_Limits (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Limits (
+        VARIANT pVal ) = 0;
+};
+
+struct __declspec(uuid("87d9ae6a-f168-11d1-9d1f-aa0004004105"))
+IPolynomial : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Curve (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Curve (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_Covariance (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Covariance (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+    virtual HRESULT __stdcall get_Limits (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Limits (
+        VARIANT pVal ) = 0;
+};
+
+struct __declspec(uuid("53885ca3-ef50-11d1-9d1c-aa0004004105"))
+IAddASource : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Reals (
+        struct IReals * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Totals (
+        struct ITotals * * pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("b3682f71-f0e5-11d1-9d1e-aa0004004105"))
+IMultCorrected : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Reals (
+        struct IReals * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Doubles (
+        struct IDoubles * * pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("53885ca1-ef50-11d1-9d1c-aa0004004105"))
+INonMCReals : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Power (
+        struct IPower * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Exponential (
+        struct IExponential * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Rational (
+        struct IRational * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Polynomial (
+        struct IPolynomial * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Points (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Points (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("3fda5261-fec6-11d1-9d29-aa0004004105"))
+INonMult : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_NonMultReals (
+        struct INonMCReals * * pVal ) = 0;
+    virtual HRESULT __stdcall get_NonMultTotals (
+        struct ITotals * * pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("53885ca2-ef50-11d1-9d1c-aa0004004105"))
+IMass : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_MultiplicationCorrected (
+        struct IMultCorrected * * pVal ) = 0;
+    virtual HRESULT __stdcall get_NonMultiplicationCorrected (
+        struct INonMult * * pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+};
+
+struct __declspec(uuid("19faf50d-ce0f-11d1-9cfa-aa0004004105"))
+IEfficiency : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_DualCurve (
+        long lRec,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_LinearCurve (
+        long lRec,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_EmpiricalCurve (
+        long lRec,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_AlphaCurve (
+        long lRec,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_EfficiencyPoints (
+        long lRec,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_EfficiencyPoints (
+        long lRec,
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_CrossOver (
+        long lRec,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+};
+
+struct __declspec(uuid("ebaaf761-f965-11d1-b348-aa0004004504"))
+ITransmission : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_RatioPoints (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall get_ReferencePoints (
+        VARIANT_BOOL bContainer,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_ReferencePoints (
+        VARIANT_BOOL bContainer,
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_SamplePoints (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_SamplePoints (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_NuclidePeaks (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_NuclidePeaks (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("cd3d7251-fc70-11d1-b350-aa0004004504"))
+IDifferentialPeak : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_ReferenceRatio (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_ReferenceRatio (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_SampleRatio (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_SampleRatio (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_NuclidePeaks (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_NuclidePeaks (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("70262240-ce0e-11d1-9cfa-aa0004004105"))
+ICalibration : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Energy (
+        struct IEnergy * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Fwhm (
+        struct IFwhm * * pVal ) = 0;
+    virtual HRESULT __stdcall get_LowTail (
+        struct ILowTail * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Efficiency (
+        struct IEfficiency * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Mass (
+        struct IMass * * pVal ) = 0;
+    virtual HRESULT __stdcall get_AddASource (
+        struct IAddASource * * pVal ) = 0;
+    virtual HRESULT __stdcall get_MatrixCorrection (
+        struct IMatrixCorrection * * pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall get_Transmission (
+        struct ITransmission * * pVal ) = 0;
+    virtual HRESULT __stdcall get_DifferentialPeak (
+        struct IDifferentialPeak * * pVal ) = 0;
+};
+
+struct __declspec(uuid("ed8dc431-0f4a-11d2-b366-aa0004004504"))
+IPeakArea : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_Points (
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Points (
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_CalibrationType (
+        long _arg1 ) = 0;
+};
+
+struct __declspec(uuid("bd0847a0-0d00-11d2-b365-aa0004004504"))
+IPeaks : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall get_PeakArea (
+        struct IPeakArea * * pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * _arg1 ) = 0;
+};
+
+struct __declspec(uuid("5531fc7d-c3df-11d1-9cf4-aa0004004105"))
+IDataAccess : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Open (
+        BSTR bstrName,
+        enum OpenMode lOptions,
+        long lNumChans ) = 0;
+    virtual HRESULT __stdcall Close (
+        enum CloseMode lOptions ) = 0;
+    virtual HRESULT __stdcall get_Name (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall Find (
+        enum FindMode lOptions,
+        VARIANT vSearchObject,
+        long lStartRecord,
+        long * plRec ) = 0;
+    virtual HRESULT __stdcall InsertRecord (
+        enum ClassCodes lClass,
+        long lRec,
+        enum ParamCodes lParam ) = 0;
+    virtual HRESULT __stdcall InsertEntry (
+        enum ClassCodes lClass,
+        long lRec,
+        long lEntry,
+        enum ParamCodes lParam ) = 0;
+    virtual HRESULT __stdcall DeleteRecord (
+        enum ClassCodes lClass,
+        long lRec,
+        enum ParamCodes lParam ) = 0;
+    virtual HRESULT __stdcall DeleteEntry (
+        enum ClassCodes lClass,
+        long lRec,
+        long lEntry,
+        enum ParamCodes lParam ) = 0;
+    virtual HRESULT __stdcall CreateBlock (
+        enum ClassCodes lClass,
+        long lSize,
+        enum ParamCodes lParam ) = 0;
+    virtual HRESULT __stdcall CopyBlock (
+        VARIANT Destination,
+        enum ClassCodes lClass,
+        enum ParamCodes lParam ) = 0;
+    virtual HRESULT __stdcall get_Spectrum (
+        long lStart,
+        long lStop,
+        long lRow,
+        long lGroup,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Spectrum (
+        long lStart,
+        long lStop,
+        long lRow,
+        long lGroup,
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_Param (
+        enum ParamCodes lCodes,
+        long lRec,
+        long lEntry,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Param (
+        enum ParamCodes lCodes,
+        long lRec,
+        long lEntry,
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_ParamArray (
+        VARIANT * pvCodes,
+        long lRec,
+        long lEntry,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_ParamArray (
+        VARIANT * pvCodes,
+        long lRec,
+        long lEntry,
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall get_AccessChannel (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_AccessHandle (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall DeleteBlock (
+        enum ClassCodes lClass,
+        enum ParamCodes lParam ) = 0;
+    virtual HRESULT __stdcall get_NumberOfRecords (
+        enum ClassCodes lClass,
+        enum ParamCodes lParam,
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_NumberOfEntries (
+        enum ClassCodes lClass,
+        long lRecord,
+        enum ParamCodes lParam,
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall Flush ( ) = 0;
+    virtual HRESULT __stdcall get_Calibrations (
+        struct ICalibration * * pVal ) = 0;
+    virtual HRESULT __stdcall put_DataSrc (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_DataSrc (
+        long * pVal ) = 0;
+    virtual HRESULT __stdcall get_Peaks (
+        struct IPeaks * * pVal ) = 0;
+    virtual HRESULT __stdcall get_Component (
+        BSTR * pVal ) = 0;
+    virtual HRESULT __stdcall ConnectFromSource (
+        long lAddr,
+        long lOptions ) = 0;
+    virtual HRESULT __stdcall PrivOpen (
+        BSTR bstrName,
+        long lOptions,
+        long lChans,
+        BSTR bstrApp ) = 0;
+    virtual HRESULT __stdcall AccessOptions (
+        long * Flags ) = 0;
+    virtual HRESULT __stdcall get_IsOpen (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall Save (
+        BSTR Name,
+        VARIANT_BOOL vbOverWrite ) = 0;
+    virtual HRESULT __stdcall get_ParamArrayEx (
+        enum ParamCodes Code,
+        long Num,
+        enum ArrayOptions Options,
+        long lRec,
+        long lEntry,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_ParamArrayEx (
+        enum ParamCodes Code,
+        long Num,
+        enum ArrayOptions Options,
+        long lRec,
+        long lEntry,
+        VARIANT pVal ) = 0;
+    virtual HRESULT __stdcall EvaluateSpectroscopyCalibration (
+        float Point,
+        enum SpectroscopyCalibrations Calibration,
+        float * Value,
+        float * Unc,
+        VARIANT_BOOL PointIsEnergy,
+        long Rec ) = 0;
+    virtual HRESULT __stdcall ConvertEnergyToChannel (
+        float Energy,
+        float * Channel ) = 0;
+    virtual HRESULT __stdcall ComputeROIs (
+        float Left,
+        float Right,
+        long Background,
+        float NumberOfStdDev,
+        VARIANT_BOOL ValuesAreEnergy,
+        VARIANT * Vals ) = 0;
+    virtual HRESULT __stdcall IsWarning (
+        enum MessageCodes lStat,
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall IsError (
+        enum MessageCodes lStat,
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall Message (
+        enum MessageCodes Code,
+        BSTR * MessageString ) = 0;
+    virtual HRESULT __stdcall FileExists (
+        BSTR Name,
+        VARIANT_BOOL * Val ) = 0;
+    virtual HRESULT __stdcall get_IsModified (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall put_IsModified (
+        VARIANT_BOOL pVal ) = 0;
+    virtual HRESULT __stdcall CopyRecord (
+        enum ClassCodes lClass,
+        long SourceRec,
+        long DestRec,
+        VARIANT_BOOL Delete,
+        VARIANT Dest ) = 0;
+    virtual HRESULT __stdcall get_Properties (
+        VARIANT Name,
+        VARIANT * pVal ) = 0;
+    virtual HRESULT __stdcall put_Properties (
+        VARIANT Name,
+        VARIANT pVal ) = 0;
+};
+
+enum OpenMode
+{
+    dReadOnly = 0,
+    dReadWrite = 512,
+    dDirectAccess = 128,
+    dCreate = 1536,
+    dOverWrite = 16384,
+    dLargeHeader = 2048,
+    dNoVerifyLicense = 8192
+};
+
+enum CloseMode
+{
+    dUpdate = 0,
+    dDelete = 2,
+    dNoUpdate = 4
+};
+
+enum ArrayOptions
+{
+    dAutoIncrementRecord = 0,
+    dAutoIncrementEntry = 1
+};
+
+enum SpectroscopyCalibrations
+{
+    dEfficiency = 0,
+    dEnergy = 1,
+    dFwhm = 2,
+    dLowEnergyTail = 3
+};
+
+struct __declspec(uuid("5531fc7e-c3df-11d1-9cf4-aa0004004105"))
+DataAccess;
+    // [ default ] interface IDataAccess
+    // interface IMass
+    // interface IAddASource
+    // interface IEfficiency
+    // interface ICalibration
+
+#pragma pack(pop)

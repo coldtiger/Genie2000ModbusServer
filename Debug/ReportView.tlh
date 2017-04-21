@@ -1,0 +1,199 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (59fa70ec).
+//
+// d:\gssoftware\genie2000\debug\ReportView.tlh
+//
+// C++ source equivalent of Win32 type library ReportView.tlb
+// compiler-generated file created 03/10/17 at 15:09:52 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("5ec32871-bcac-11d1-ab1e-0020af302738"))
+/* dual interface */ IReportViewer;
+struct __declspec(uuid("01f035b8-5aeb-42c3-a877-f171f4415396"))
+/* dual interface */ IReportViewerExtensions;
+struct /* coclass */ ReportViewer;
+struct __declspec(uuid("6c1c0276-db72-11d1-84b2-00a0248c8e7b"))
+/* dual interface */ IReporter;
+struct /* coclass */ Reporter;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(IReportViewer, __uuidof(IReportViewer));
+_COM_SMARTPTR_TYPEDEF(IReportViewerExtensions, __uuidof(IReportViewerExtensions));
+_COM_SMARTPTR_TYPEDEF(IReporter, __uuidof(IReporter));
+
+//
+// Type library items
+//
+
+enum BorderStyle
+{
+    rptFlat = 0,
+    rptThreeD = 1
+};
+
+enum ReportOptions
+{
+    rptPage1 = 1,
+    rptNewPage = 2,
+    rptNewFile = 4,
+    rptScreen = 8,
+    rptPrinter = 16
+};
+
+struct __declspec(uuid("5ec32871-bcac-11d1-ab1e-0020af302738"))
+IReportViewer : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall put_BackColor (
+        OLE_COLOR pclr ) = 0;
+    virtual HRESULT __stdcall get_BackColor (
+        OLE_COLOR * pclr ) = 0;
+    virtual HRESULT __stdcall putref_Font (
+        IFontDisp * ppFont ) = 0;
+    virtual HRESULT __stdcall put_Font (
+        IFontDisp * ppFont ) = 0;
+    virtual HRESULT __stdcall get_Font (
+        IFontDisp * * ppFont ) = 0;
+    virtual HRESULT __stdcall get_Window (
+        long * phwnd ) = 0;
+    virtual HRESULT __stdcall Clear ( ) = 0;
+    virtual HRESULT __stdcall PrintOut (
+        BSTR Printer ) = 0;
+    virtual HRESULT __stdcall put_BorderStyle (
+        enum BorderStyle pstyle ) = 0;
+    virtual HRESULT __stdcall get_BorderStyle (
+        enum BorderStyle * pstyle ) = 0;
+    virtual HRESULT __stdcall Copy ( ) = 0;
+    virtual HRESULT __stdcall CopyAll ( ) = 0;
+    virtual HRESULT __stdcall LoadText (
+        BSTR Filename,
+        long * Offset,
+        long Length ) = 0;
+    virtual HRESULT __stdcall LoadRTF (
+        BSTR Filename ) = 0;
+    virtual HRESULT __stdcall SaveText (
+        BSTR Filename,
+        VARIANT_BOOL Overwrite ) = 0;
+    virtual HRESULT __stdcall SaveRTF (
+        BSTR Filename,
+        VARIANT_BOOL Overwrite ) = 0;
+    virtual HRESULT __stdcall ExecuteReport (
+        IDispatch * Datasource,
+        BSTR Template,
+        BSTR Section,
+        enum ReportOptions Options,
+        float Sigma,
+        BSTR ActivityUnits,
+        float ActivityMultiplier ) = 0;
+    virtual HRESULT __stdcall IsWarning (
+        long StatusCode,
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall IsError (
+        long StatusCode,
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall Message (
+        long StatusCode,
+        BSTR * MessageString ) = 0;
+};
+
+struct __declspec(uuid("01f035b8-5aeb-42c3-a877-f171f4415396"))
+IReportViewerExtensions : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall IsWarning (
+        long StatusCode,
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall IsError (
+        long StatusCode,
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall Message (
+        long StatusCode,
+        BSTR * MessageString ) = 0;
+    virtual HRESULT __stdcall get_Property (
+        BSTR Name,
+        VARIANT * Val ) = 0;
+    virtual HRESULT __stdcall put_Property (
+        BSTR Name,
+        VARIANT Val ) = 0;
+    virtual HRESULT __stdcall IsEnhancedRpt (
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall ExportReport (
+        BSTR Filename ) = 0;
+    virtual HRESULT __stdcall LoadTextEx (
+        BSTR Filename,
+        long * Offset,
+        long Length,
+        VARIANT_BOOL ScreenFlag,
+        VARIANT_BOOL PrintFlag ) = 0;
+    virtual HRESULT __stdcall put_PDFAuthor (
+        BSTR _arg1 ) = 0;
+    virtual HRESULT __stdcall put_PDFTitle (
+        BSTR _arg1 ) = 0;
+    virtual HRESULT __stdcall put_PDFSubject (
+        BSTR _arg1 ) = 0;
+    virtual HRESULT __stdcall put_PDFKeyword (
+        BSTR _arg1 ) = 0;
+    virtual HRESULT __stdcall put_PDFCreator (
+        BSTR _arg1 ) = 0;
+    virtual HRESULT __stdcall get_PreviewScale (
+        long * pPreviewScale ) = 0;
+    virtual HRESULT __stdcall put_PreviewScale (
+        long pPreviewScale ) = 0;
+    virtual HRESULT __stdcall get_PaperView (
+        VARIANT_BOOL * pPaperView ) = 0;
+    virtual HRESULT __stdcall put_PaperView (
+        VARIANT_BOOL pPaperView ) = 0;
+    virtual HRESULT __stdcall CreateObjects ( ) = 0;
+};
+
+struct __declspec(uuid("5ec32872-bcac-11d1-ab1e-0020af302738"))
+ReportViewer;
+    // [ default ] interface IReportViewer
+    // interface IReportViewerExtensions
+
+struct __declspec(uuid("6c1c0276-db72-11d1-84b2-00a0248c8e7b"))
+IReporter : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall put_Font (
+        IFontDisp * _arg1 ) = 0;
+    virtual HRESULT __stdcall put_Printer (
+        BSTR _arg1 ) = 0;
+    virtual HRESULT __stdcall PrintFile (
+        BSTR Filename,
+        VARIANT_BOOL RTF ) = 0;
+    virtual HRESULT __stdcall IsWarning (
+        long StatusCode,
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall IsError (
+        long StatusCode,
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall Message (
+        long StatusCode,
+        BSTR * MessageString ) = 0;
+};
+
+struct __declspec(uuid("6c1c0277-db72-11d1-84b2-00a0248c8e7b"))
+Reporter;
+    // [ default ] interface IReporter
+
+#pragma pack(pop)

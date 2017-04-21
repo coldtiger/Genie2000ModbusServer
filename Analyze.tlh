@@ -1,0 +1,131 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (12da1311).
+//
+// Analyze.tlh
+//
+// C++ source equivalent of Win32 type library Analyze.tlb
+// compiler-generated file created 10/09/16 at 15:21:54 - DO NOT EDIT!
+
+//
+// Cross-referenced type libraries:
+//
+//  #import "C:\GENIE2K\EXEFILES\rptview.dll"
+//
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("2f76d5d1-d490-11d1-84a8-00a0248c8e7b"))
+/* dual interface */ ISequenceAnalyzerEvents;
+struct __declspec(uuid("d57c3b9e-d2f9-11d1-84a6-00a0248c8e7b"))
+/* dual interface */ ISequenceAnalyzer;
+struct __declspec(uuid("2f76d5d2-d490-11d1-84a8-00a0248c8e7b"))
+/* dispinterface */ DISequenceAnalyzerEvents;
+struct /* coclass */ SequenceAnalyzer;
+struct __declspec(uuid("816cae22-d460-11d1-84a8-00a0248c8e7b"))
+/* dual interface */ IAnalysisEditor;
+struct /* coclass */ AnalysisEditor;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ISequenceAnalyzerEvents, __uuidof(ISequenceAnalyzerEvents));
+_COM_SMARTPTR_TYPEDEF(ISequenceAnalyzer, __uuidof(ISequenceAnalyzer));
+_COM_SMARTPTR_TYPEDEF(DISequenceAnalyzerEvents, __uuidof(IDispatch));
+_COM_SMARTPTR_TYPEDEF(IAnalysisEditor, __uuidof(IAnalysisEditor));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("2f76d5d1-d490-11d1-84a8-00a0248c8e7b"))
+ISequenceAnalyzerEvents : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall AnalyzeDone (
+        long hRes,
+        short nStep ) = 0;
+};
+
+struct __declspec(uuid("d57c3b9e-d2f9-11d1-84a6-00a0248c8e7b"))
+ISequenceAnalyzer : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall Analyze (
+        IDispatch * Datasource,
+        short * Step,
+        BSTR SequenceFile,
+        VARIANT_BOOL Async,
+        VARIANT_BOOL Alpha,
+        VARIANT_BOOL ReportOnly,
+        VARIANT_BOOL NoReport,
+        BSTR OutFile,
+        struct IReportViewer * Reporter ) = 0;
+    virtual HRESULT __stdcall Abort ( ) = 0;
+    virtual HRESULT __stdcall IsWarning (
+        long StatusCode,
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall IsError (
+        long StatusCode,
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall Message (
+        long StatusCode,
+        BSTR * MessageString ) = 0;
+};
+
+struct __declspec(uuid("2f76d5d2-d490-11d1-84a8-00a0248c8e7b"))
+DISequenceAnalyzerEvents : IDispatch
+{};
+
+struct __declspec(uuid("d57c3b9f-d2f9-11d1-84a6-00a0248c8e7b"))
+SequenceAnalyzer;
+    // [ default ] interface ISequenceAnalyzer
+    // interface ISequenceAnalyzerEvents
+    // [ default, source ] dispinterface DISequenceAnalyzerEvents
+
+struct __declspec(uuid("816cae22-d460-11d1-84a8-00a0248c8e7b"))
+IAnalysisEditor : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall SetSequence (
+        IDispatch * Datasource,
+        VARIANT_BOOL Alpha,
+        VARIANT_BOOL ReadOnly ) = 0;
+    virtual HRESULT __stdcall GetSequenceChanges (
+        IDispatch * Datasource ) = 0;
+    virtual HRESULT __stdcall IsChanged (
+        VARIANT_BOOL * Dirty ) = 0;
+    virtual HRESULT __stdcall NewSequence (
+        VARIANT_BOOL Alpha,
+        VARIANT_BOOL NAI ) = 0;
+    virtual HRESULT __stdcall IsWarning (
+        long StatusCode,
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall IsError (
+        long StatusCode,
+        VARIANT_BOOL * pVal ) = 0;
+    virtual HRESULT __stdcall Message (
+        long StatusCode,
+        BSTR * MessageString ) = 0;
+};
+
+struct __declspec(uuid("816cae23-d460-11d1-84a8-00a0248c8e7b"))
+AnalysisEditor;
+    // [ default ] interface IAnalysisEditor
+
+#pragma pack(pop)

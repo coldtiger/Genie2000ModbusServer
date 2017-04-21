@@ -1,0 +1,160 @@
+// Created by Microsoft (R) C/C++ Compiler Version 12.00.8168.0 (7a914cea).
+//
+// d:\gssoftware\genie2000\debug\camdialog.tlh
+//
+// C++ source equivalent of Win32 type library camdialog.tlb
+// compiler-generated file created 03/10/17 at 15:09:52 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("d6805fae-af24-11d3-8200-ec9def000000"))
+/* dual interface */ ICamDlg;
+struct __declspec(uuid("d6805fb0-af24-11d3-8200-ec9def000000"))
+/* dispinterface */ _ICamDlgEvents;
+struct /* coclass */ CamDlg;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ICamDlg, __uuidof(ICamDlg));
+_COM_SMARTPTR_TYPEDEF(_ICamDlgEvents, __uuidof(IDispatch));
+
+//
+// Type library items
+//
+
+enum DataSourceOpenMask
+{
+    camdlgShowCamFileRadio = 1,
+    camdlgShowCounterRadio = 2,
+    camdlgShowDetectorRadio = 4,
+    camdlgShowReadOnlyCheck = 8,
+    camdlgShowInfo = 256,
+    camdlgOpenDefault = 261
+};
+
+enum DataSourceSaveMask
+{
+    camdlgShowDescription = 1024,
+    camdlgShowTitle = 2048,
+    camdlgShowGeometry = 4096,
+    camdlgShowCertificateName = 32768,
+    camdlgSaveDefault = 1024
+};
+
+enum DataSourceCalMask
+{
+    camdlgShowEnergy = 16,
+    camdlgShowEfficiency = 32,
+    camdlgShowAppend = 64,
+    camdlgCalDefault = 112
+};
+
+enum OpenDataSourceType
+{
+    camdlgFile = 7,
+    camdlgDetector = 4
+};
+
+enum ServerType
+{
+    camdlgTypeB = 66,
+    camdlgTypeF = 70,
+    camdlgTypeM = 77
+};
+
+struct __declspec(uuid("d6805fae-af24-11d3-8200-ec9def000000"))
+ICamDlg : IDispatch
+{
+    //
+    // Raw methods provided by interface
+    //
+
+    virtual HRESULT __stdcall OpenDataSource (
+        VARIANT_BOOL * Cancelled,
+        BSTR * File,
+        VARIANT_BOOL * ReadOnly,
+        enum OpenDataSourceType * DataSource,
+        enum DataSourceOpenMask Mask,
+        BSTR Title,
+        BSTR Dir,
+        BSTR Extension,
+        BSTR HelpFile,
+        long * Type,
+        long * ConfigRec,
+        BSTR ShellId ) = 0;
+    virtual HRESULT __stdcall SaveAs (
+        VARIANT_BOOL * Cancelled,
+        BSTR * File,
+        BSTR * FileTitle,
+        BSTR * Desc,
+        BSTR * Geom,
+        enum DataSourceSaveMask Mask,
+        BSTR Title,
+        BSTR Dir,
+        BSTR Extension,
+        BSTR HelpFile,
+        long * Type,
+        long * ConfigRec,
+        BSTR ShellId ) = 0;
+    virtual HRESULT __stdcall OpenCertificate (
+        VARIANT_BOOL * Cancelled,
+        BSTR * File,
+        BSTR Title,
+        BSTR Dir,
+        BSTR HelpFile,
+        long * Type,
+        long * ConfigRec,
+        BSTR ShellId ) = 0;
+    virtual HRESULT __stdcall OpenNuclideLib (
+        VARIANT_BOOL * Cancelled,
+        BSTR * File,
+        BSTR Title,
+        BSTR Dir,
+        BSTR HelpFile,
+        long * Type,
+        long * ConfigRec,
+        BSTR ShellId ) = 0;
+    virtual HRESULT __stdcall OpenROI (
+        VARIANT_BOOL * Cancelled,
+        BSTR * File,
+        VARIANT_BOOL * Energy,
+        BSTR Title,
+        BSTR Dir,
+        BSTR HelpFile,
+        long * Type,
+        long * ConfigRec,
+        BSTR ShellId ) = 0;
+    virtual HRESULT __stdcall OpenCalibration (
+        VARIANT_BOOL * Cancelled,
+        BSTR * File,
+        VARIANT_BOOL * Energy,
+        VARIANT_BOOL * Efficiency,
+        VARIANT_BOOL * Append,
+        enum DataSourceCalMask Mask,
+        BSTR Title,
+        BSTR Dir,
+        BSTR HelpFile,
+        long * Type,
+        long * ConfigRec,
+        BSTR ShellId ) = 0;
+};
+
+struct __declspec(uuid("d6805fb0-af24-11d3-8200-ec9def000000"))
+_ICamDlgEvents : IDispatch
+{};
+
+struct __declspec(uuid("d6805faf-af24-11d3-8200-ec9def000000"))
+CamDlg;
+    // [ default ] interface ICamDlg
+    // [ default, source ] dispinterface _ICamDlgEvents
+
+#pragma pack(pop)
