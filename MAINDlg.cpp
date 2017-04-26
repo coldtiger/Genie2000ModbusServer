@@ -440,7 +440,7 @@ BOOL CMainDialog::DisconnectServer()
 
 	return TRUE;
 }
-//开始测量：第一个参数，选择测量模式Live/Real;第二个参数，设置测量结果文件名
+//开始测量：第一个参数，选择测量模式1=Live/0=Real;第二个参数，设置测量结果文件名
 void CMainDialog::StartDetection(BOOL LiveOrReal,int t,CString Name){
 	DeviceAccess::IDeviceAccessPtr m_pIDevAcc = m_cIMvc.GetCurrentDataSource ();
 	
