@@ -104,6 +104,7 @@ BEGIN_MESSAGE_MAP(CMainDialog, CDialog)
 	ON_COMMAND(IDM_ANALYSIS_SHOWREPORT, OnShowReportWinodow)
 	ON_COMMAND(IDM_ANALYSIS_PRINTREPORT, OnPrintReport)
 	ON_COMMAND(IDM_ANALYSIS_SAVEREPORT, OnSaveReport)
+	//ON_COMMAND(IDM_ANALYSIS_SAVEREPORT, AutoSaveReport)
 	ON_COMMAND(IDM_ANALYSYS_COPYSELECTED, OnCopySelectedReport)
 	ON_COMMAND(IDM_ANALYSIS_COPYREPORT, OnCopyReport)
 	ON_COMMAND(IDM_DATASOURCE_NEXT, OnNextDatasource)
@@ -440,7 +441,7 @@ BOOL CMainDialog::DisconnectServer()
 
 	return TRUE;
 }
-//开始测量：第一个参数，选择测量模式1=Live/0=Real;第二个参数，设置测量结果文件名
+//开始测量：第一个参数，选择测量模式Live/Real;第二个参数，设置测量结果文件名
 void CMainDialog::StartDetection(BOOL LiveOrReal,int t,CString Name){
 	DeviceAccess::IDeviceAccessPtr m_pIDevAcc = m_cIMvc.GetCurrentDataSource ();
 	
@@ -505,9 +506,10 @@ void CMainDialog::OnAutoExecute()
     char strAsfFiles [255];
            
     // Change current drive
-    GetEnvironmentVariable (_T("ASEQFILES"), strAsfFiles, 255);
+    GetEnvironmentVariable (_T("ASEQFILES"), strAsfFiles, 255);//C:\GENIE2K\CALFILES
     CString filepath;
 	filepath.Format(_T("%s"), strAsfFiles);
+	//AfxMessageBox (filepath);
 	filepath=filepath+"\\TGS.asf";
 
  	// Use the MFC Common Dialog to get a filename
@@ -561,7 +563,7 @@ void CMainDialog::OnAutoExecute()
 
 	lpDisp->Release ();
 	m_pISeqAnalyzer.Release ();
-	//AutoSaveReport ();
+	//AutoSaveReport ();//错误
 }
 //存储文件
 void CMainDialog::AutoSaveReport () 

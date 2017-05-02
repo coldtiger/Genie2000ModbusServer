@@ -6,13 +6,13 @@
 --------------------Configuration: Example - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP41F.tmp" with contents
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1544.tmp" with contents
 [
 /nologo /Zp2 /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/Example.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
 "D:\GSsoftware\Genie2000\MAINDlg.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP41F.tmp" 
-Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP420.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1544.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1545.tmp" with contents
 [
 /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Example.pdb" /debug /machine:I386 /out:"Debug/Example.exe" /pdbtype:sept 
 .\Debug\AboutDlg.obj
@@ -44,12 +44,12 @@ Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP420.tmp" with con
 .\Debug\reportviewer.obj
 .\Debug\Example.res
 ]
-Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP420.tmp"
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1545.tmp"
 <h3>Output Window</h3>
 Compiling...
 MAINDlg.cpp
 Linking...
-Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP421.tmp" with contents
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1546.tmp" with contents
 [
 /nologo /o"Debug/Example.bsc" 
 .\Debug\StdAfx.sbr
@@ -79,7 +79,7 @@ Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP421.tmp" with con
 .\Debug\font.sbr
 .\Debug\mvc.sbr
 .\Debug\reportviewer.sbr]
-Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP421.tmp"
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1546.tmp"
 Creating browse info file...
 <h3>Output Window</h3>
 

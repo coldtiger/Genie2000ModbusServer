@@ -20,14 +20,14 @@ Class8=CSeqAnalyzer
 Class9=CMainApp
 
 ResourceCount=9
-Resource1=IDD_DIALOG_WINGAA (English (U.S.))
-Resource2=IDD_ABOUTBOX (English (U.S.))
-Resource3=IDD_DIALOG_ADJUST (English (U.S.))
-Resource4=IDD_DIALOG_ANALYSIS (English (U.S.))
-Resource5=IDD_DIALOG_CAL (English (U.S.))
-Resource6=IDD_DIALOG_SAMPLEINFO (English (U.S.))
-Resource7=IDD_DIALOG_ACQSETUP (English (U.S.))
-Resource8=IDD_DIALOG_PREFERENCE (English (U.S.))
+Resource1=IDD_DIALOG_ANALYSIS (English (U.S.))
+Resource2=IDD_DIALOG_PREFERENCE (English (U.S.))
+Resource3=IDD_DIALOG_CAL (English (U.S.))
+Resource4=IDD_DIALOG_WINGAA (English (U.S.))
+Resource5=IDD_DIALOG_ADJUST (English (U.S.))
+Resource6=IDD_DIALOG_ACQSETUP (English (U.S.))
+Resource7=IDD_DIALOG_SAMPLEINFO (English (U.S.))
+Resource8=IDD_ABOUTBOX (English (U.S.))
 Resource9=IDR_MAIN_MENU (English (U.S.))
 
 [CLS:CAboutDlg]
